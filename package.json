@@ -20,7 +20,7 @@
     "main": "./lib/strsim",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tjwudi"
+        "url": "https://github.com/tjwudi/strsim"
     },
     "keywords": [
         "string similarity"
