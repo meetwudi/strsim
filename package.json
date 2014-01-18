@@ -1,0 +1,41 @@
+{
+    "name": "strsim",
+    "preferGlobal": true,
+    "version": "0.1.0",
+    "author": "John Wu <webmaster@leapoahead.com>",
+    "description": "a library which tests string similarity",
+    "contributors": [ 
+        {
+            "name": "John Wu",
+            "email": "webmaster@leapoahead.com"
+        } 
+    ],
+    "bin": {
+        "strsim": "./bin/strsim"
+    },
+    "scripts": {
+        "start": "node ./bin/strsim",
+        "test": "mocha -R spec"
+    },
+    "main": "./lib/strsim",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tjwudi"
+    },
+    "keywords": [
+        "string similarity"
+    ],
+    "dependencies" : {
+    },
+    "analyze": false,
+    "devDependencies": {
+        "mocha" : "*",
+        "should" : "*"
+    },
+    "bundledDependencies": [
+    ],  
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.8"
+    }
+}
