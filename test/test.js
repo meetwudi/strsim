@@ -8,6 +8,7 @@ describe('Levenshtein distance calculation', function() {
         strsim.lev('Hey!', ' Hay.').should.equal(2);
         strsim.lev('测试看看中文比较 ', '测试中文比较').should.equal(2);
         strsim.lev('', ' ').should.equal(0);
+        strsim.lev('ok', 'none').should.equal(-3);
         
         done();
     });

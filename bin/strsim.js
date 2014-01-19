@@ -14,7 +14,7 @@ function _lev(a, b, i, j) {
     
     result = Math.min(result, _lev(a, b, i - 1, j) + 1);
     result = Math.min(result, _lev(a, b, i, j - 1) + 1);
-    result = Math.min(result, _lev(a, b, i - 1, j - 1) + (a[i] === b[j] ? 0 : 1));
+    result = Math.min(result, _lev(a, b, i - 1, j - 1) + (a[i - 1] === b[j - 1] ? 0 : 1));
     
     return result;    
 }
