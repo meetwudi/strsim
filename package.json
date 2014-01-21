@@ -1,7 +1,7 @@
 {
     "name": "strsim",
     "preferGlobal": true,
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "John Wu <webmaster@leapoahead.com>",
     "description": "a library which tests string similarity",
     "contributors": [ 
