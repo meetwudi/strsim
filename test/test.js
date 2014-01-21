@@ -8,7 +8,7 @@ describe('Levenshtein distance calculation', function() {
         strsim.lev('Hey!', ' Hay.').should.equal(2);
         strsim.lev('测试看看中文比较 ', '测试中文比较').should.equal(2);
         strsim.lev('', ' ').should.equal(0);
-        strsim.lev('ok', 'none').should.equal(-3);
+        strsim.lev('ok', 'none').should.equal(3);
         
         done();
     });
@@ -17,6 +17,7 @@ describe('Levenshtein distance calculation', function() {
 describe('calculate similarity', function() {
     it('should give a valid similarity between two strings', function(done) {
         strsim.test('hey', 'hey').should.equal(1);
+        strsim.test('cool', 'github').should.equal(0);
         // TODO : FINISH TEST CASES
         
         done();

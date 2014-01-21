@@ -29,8 +29,7 @@ function lev(a, b) {
 
 function test(a, b) {
     var t = null,
-        maxL = Math.max(a.length, b.length),
-        totL = a.length + b.length;
+        maxL = Math.max(a.length, b.length);
     if (a.length < b.length) {
         t = a; 
         a = b;
@@ -41,7 +40,7 @@ function test(a, b) {
         return 1.0; /* both strings are zero length */
     }
     
-    return 1.0 * ((totL - lev(a, b)) / totL);
+    return 1.0 * ((maxL - lev(a, b)) / maxL);
 }
 
 module.exports = {
