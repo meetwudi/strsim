@@ -27,7 +27,8 @@ function lev(a, b) {
     return _lev(trimA, trimB, trimA.length, trimB.length);
 }
 
-function test(a, b) {
+function test(a, b, opt) {
+    opt = opt || {};
     var t = null,
         maxL = Math.max(a.length, b.length);
     if (a.length < b.length) {
